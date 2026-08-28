@@ -14,7 +14,9 @@ const URL_PATTERN = /(https?:\/\/[^\s<>"']+)/g;
 // Only these tags survive; everything else is either dropped (script/style,
 // content included) or "unwrapped" (the tag is discarded but its text
 // content is kept, e.g. a stray <div> just becomes plain text).
-const ALLOWED_TAGS = new Set(['B', 'I', 'U', 'S', 'STRONG', 'EM']);
+const ALLOWED_TAGS = new Set([
+  'B', 'I', 'U', 'S', 'STRONG', 'EM', 'DEL', 'MARK', 'SMALL', 'BIG', 'SUP', 'SUB', 'BR', 'CODE', 'BLOCKQUOTE', 'PRE'
+]);
 const DROP_ENTIRELY_TAGS = new Set(['SCRIPT', 'STYLE']);
 
 // Parses `rawText` via an inert <template> (its content never executes or
