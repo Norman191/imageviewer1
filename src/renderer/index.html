@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' file: data:; script-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <title>Discord Video Maker</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="server-rail" class="server-rail"></div>
+    <div id="channel-sidebar" class="channel-sidebar"></div>
+
+    <div id="chat-area" class="chat-area">
+      <div id="chat-header" class="chat-header"></div>
+      <div id="messages-scroll" class="messages-scroll">
+        <div id="messages-list" class="messages-list"></div>
+      </div>
+      <div id="composer-container" class="composer-container"></div>
+      <div id="script-panel" class="script-panel hidden"></div>
+    </div>
+
+    <div id="member-panel" class="member-panel"></div>
+    <div id="storyboard-panel" class="storyboard-panel hidden"></div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="context-menu-root"></div>
+  <div id="toast-root"></div>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
